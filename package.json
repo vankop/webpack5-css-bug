@@ -1,0 +1,30 @@
+{
+  "name": "webpack5-css-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --env.development",
+    "build": "webpack --env.production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vankop/webpack5-css-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vankop/webpack5-css-bug/issues"
+  },
+  "homepage": "https://github.com/vankop/webpack5-css-bug#readme",
+  "dependencies": {
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^5.0.0-beta.14",
+    "webpack-cli": "^3.3.11"
+  }
+}
