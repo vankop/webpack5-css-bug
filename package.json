@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --env.development",
-    "build": "webpack --env.production",
+    "dev": "webpack-cli --env.development",
+    "build": "webpack-cli --env.production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

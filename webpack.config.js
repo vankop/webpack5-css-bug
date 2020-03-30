@@ -21,9 +21,8 @@ module.exports = function (environment) {
 				{
 					test: /\.css$/,
 					use: [
-						MiniCssExtractPlugin.loader,
 						{
-							loader: 'css-loader',
+							loader: 'css-loader'
 						},
 					]
 				},
@@ -36,6 +35,9 @@ module.exports = function (environment) {
 				'@': path.resolve(__dirname),
 			},
 			extensions: ['.vue', '.ts', '.js', '.tsx'],
+		},
+		optimization: {
+			minimize: false
 		},
 		plugins: [
 			new VueLoaderPlugin(),

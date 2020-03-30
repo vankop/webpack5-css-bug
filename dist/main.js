@@ -1,461 +1,203 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=style&index=0&lang=css&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=style&index=0&lang=css& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************/
-/*! unknown exports (runtime-defined) */
-/*! exports [maybe provided (runtime-defined)] [unused] */
-/*! runtime requirements:  */
-/***/ (() => {
+/***/ 376:
+/***/ ((module, exports, __webpack_require__) => {
 
-// extracted by mini-css-extract-plugin
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(645);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.icon {\n\tcursor: default;\n\tcolor: black;\n\tspeak: none;\n\tfont-family: iconfont;\n\tfont-style: normal;\n\tfont-weight: normal;\n\tfont-variant: normal;\n\tfont-size: 24px;\n\tuser-select: none;\n\ttext-transform: none;\n\t-webkit-font-smoothing: antialiased;\n\t-moz-osx-font-smoothing: grayscale;\n}\n.icon.small {\n\tfont-size: 16px;\n}\n.icon.active {\n\tcolor: green;\n}\n.icon.clickable {\n\tcursor: pointer;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
 
 /***/ }),
 
-/***/ "./src/App.vue":
-/*!*********************!*\
-  !*** ./src/App.vue ***!
-  \*********************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 645:
+/***/ ((module) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=7ba5bd90& */ "./src/App.vue?vue&type=template&id=7ba5bd90&");
-/* harmony import */ var _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js& */ "./src/App.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
 
 
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
 
-/* normalize component */
+    var alreadyImportedModules = {};
 
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.render,
-  _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
 
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "src/App.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
 
-/***/ }),
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
 
-/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
 
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icon */ "./src/Icon.vue");
-//
-//
-//
-//
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
 
+      list.push(item);
+    }
+  };
 
+  return list;
+};
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-	components: {
-		Icon: _Icon__WEBPACK_IMPORTED_MODULE_0__.default
-	}
-});
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
 
+  var cssMapping = item[3];
 
-/***/ }),
+  if (!cssMapping) {
+    return content;
+  }
 
-/***/ "./src/Icon.vue":
-/*!**********************!*\
-  !*** ./src/Icon.vue ***!
-  \**********************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || '').concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
 
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _Icon_vue_vue_type_template_id_147fbd72___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icon.vue?vue&type=template&id=147fbd72& */ "./src/Icon.vue?vue&type=template&id=147fbd72&");
-/* harmony import */ var _Icon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Icon.vue?vue&type=script&lang=js& */ "./src/Icon.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Icon.vue?vue&type=style&index=0&lang=css& */ "./src/Icon.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
 
 
-
-
-
-
-/* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
-  _Icon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Icon_vue_vue_type_template_id_147fbd72___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Icon_vue_vue_type_template_id_147fbd72___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "src/Icon.vue"
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-	props: ['name', 'size', 'active', 'clickable'],
-	data() {
-		const unicode = 10;
-		const classNames = ''
-		return {unicode, classNames}
-	}
-});
-
-
-/***/ }),
-
-/***/ "./src/Icon.vue?vue&type=style&index=0&lang=css&":
-/*!*******************************************************!*\
-  !*** ./src/Icon.vue?vue&type=style&index=0&lang=css& ***!
-  \*******************************************************/
-/*! namespace exports */
-/*! export default [provided] [unused] [provision prevents renaming] */
-/*! other exports [maybe provided (runtime-defined)] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_require__.* */
+/***/ 86:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/mini-css-extract-plugin/dist/loader.js!../node_modules/css-loader/dist/cjs.js!../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../node_modules/vue-loader/lib/index.js??vue-loader-options!./Icon.vue?vue&type=style&index=0&lang=css& */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
- /* unused harmony default export */ var _unused_webpack_default_export = (mod); 
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(376);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+ /* unused harmony default export */ var _unused_webpack_default_export = ((_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default())); 
 
-/***/ }),
+/***/ })
 
-/***/ "./src/App.vue?vue&type=script&lang=js&":
-/*!**********************************************!*\
-  !*** ./src/App.vue?vue&type=script&lang=js& ***!
-  \**********************************************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		if(__webpack_module_cache__[moduleId]) {
+/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => module['default'] :
+/******/ 				() => module;
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+(() => {
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
-/***/ }),
-
-/***/ "./src/App.vue?vue&type=template&id=7ba5bd90&":
-/*!****************************************************!*\
-  !*** ./src/App.vue?vue&type=template&id=7ba5bd90& ***!
-  \****************************************************/
-/*! namespace exports */
-/*! export render [provided] [used] [could be renamed] */
-/*! export staticRenderFns [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.render,
-/* harmony export */   "staticRenderFns": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=template&id=7ba5bd90& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90&");
-
-
-/***/ }),
-
-/***/ "./src/Icon.vue?vue&type=script&lang=js&":
-/*!***********************************************!*\
-  !*** ./src/Icon.vue?vue&type=script&lang=js& ***!
-  \***********************************************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/index.js??vue-loader-options!./Icon.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
-
-/***/ }),
-
-/***/ "./src/Icon.vue?vue&type=template&id=147fbd72&":
-/*!*****************************************************!*\
-  !*** ./src/Icon.vue?vue&type=template&id=147fbd72& ***!
-  \*****************************************************/
-/*! namespace exports */
-/*! export render [provided] [used] [could be renamed] */
-/*! export staticRenderFns [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_template_id_147fbd72___WEBPACK_IMPORTED_MODULE_0__.render,
-/* harmony export */   "staticRenderFns": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_template_id_147fbd72___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns
-/* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Icon_vue_vue_type_template_id_147fbd72___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./Icon.vue?vue&type=template&id=147fbd72& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=template&id=147fbd72&");
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90&":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90& ***!
-  \*******************************************************************************************************************************************************************************************/
-/*! namespace exports */
-/*! export render [provided] [used] [could be renamed] */
-/*! export staticRenderFns [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => /* binding */ render,
-/* harmony export */   "staticRenderFns": () => /* binding */ staticRenderFns
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("Icon")
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=template&id=147fbd72&":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=template&id=147fbd72& ***!
-  \********************************************************************************************************************************************************************************************/
-/*! namespace exports */
-/*! export render [provided] [used] [could be renamed] */
-/*! export staticRenderFns [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => /* binding */ render,
-/* harmony export */   "staticRenderFns": () => /* binding */ staticRenderFns
-/* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "i",
-    {
-      staticClass: "icon",
-      class: _vm.classNames,
-      on: {
-        click: function($event) {
-          return _vm.$emit("click", $event)
-        }
-      }
-    },
-    [_vm._v("\n\t" + _vm._s(_vm.unicode) + "\n")]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
-  \********************************************************************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => /* binding */ normalizeComponent
-/* harmony export */ });
-/* globals __VUE_SSR_CONTEXT__ */
-
-// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
-
-function normalizeComponent (
-  scriptExports,
-  render,
-  staticRenderFns,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier, /* server only */
-  shadowMode /* vue-cli only */
-) {
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // render functions
-  if (render) {
-    options.render = render
-    options.staticRenderFns = staticRenderFns
-    options._compiled = true
-  }
-
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = 'data-v-' + scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = shadowMode
-      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
-      : injectStyles
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functional component in vue file
-      var originalRender = options.render
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return originalRender(h, context)
-      }
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    }
-  }
-
-  return {
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/vue/dist/vue.runtime.esm.js":
-/*!**************************************************!*\
-  !*** ./node_modules/vue/dist/vue.runtime.esm.js ***!
-  \**************************************************/
-/*! namespace exports */
-/*! export default [provided] [used] [could be renamed] */
-/*! other exports [not provided] [unused] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.g, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
+// CONCATENATED MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
 /*!
  * Vue.js v2.6.11
  * (c) 2014-2019 Evan You
@@ -545,7 +287,7 @@ function isPromise (val) {
 /**
  * Convert a value to a string that is actually rendered.
  */
-function toString (val) {
+function vue_runtime_esm_toString (val) {
   return val == null
     ? ''
     : Array.isArray(val) || (isPlainObject(val) && val.toString === _toString)
@@ -605,9 +347,9 @@ function remove (arr, item) {
 /**
  * Check whether an object has the property.
  */
-var hasOwnProperty = Object.prototype.hasOwnProperty;
+var vue_runtime_esm_hasOwnProperty = Object.prototype.hasOwnProperty;
 function hasOwn (obj, key) {
-  return hasOwnProperty.call(obj, key)
+  return vue_runtime_esm_hasOwnProperty.call(obj, key)
 }
 
 /**
@@ -838,12 +580,12 @@ var config = ({
   /**
    * Show production mode tip message on boot?
    */
-  productionTip: "development" !== 'production',
+  productionTip: "production" !== 'production',
 
   /**
    * Whether to enable devtools
    */
-  devtools: "development" !== 'production',
+  devtools: "production" !== 'production',
 
   /**
    * Whether to record perf
@@ -1061,92 +803,7 @@ var tip = noop;
 var generateComponentTrace = (noop); // work around flow check
 var formatComponentName = (noop);
 
-if (true) {
-  var hasConsole = typeof console !== 'undefined';
-  var classifyRE = /(?:^|[-_])(\w)/g;
-  var classify = function (str) { return str
-    .replace(classifyRE, function (c) { return c.toUpperCase(); })
-    .replace(/[-_]/g, ''); };
-
-  warn = function (msg, vm) {
-    var trace = vm ? generateComponentTrace(vm) : '';
-
-    if (config.warnHandler) {
-      config.warnHandler.call(null, msg, vm, trace);
-    } else if (hasConsole && (!config.silent)) {
-      console.error(("[Vue warn]: " + msg + trace));
-    }
-  };
-
-  tip = function (msg, vm) {
-    if (hasConsole && (!config.silent)) {
-      console.warn("[Vue tip]: " + msg + (
-        vm ? generateComponentTrace(vm) : ''
-      ));
-    }
-  };
-
-  formatComponentName = function (vm, includeFile) {
-    if (vm.$root === vm) {
-      return '<Root>'
-    }
-    var options = typeof vm === 'function' && vm.cid != null
-      ? vm.options
-      : vm._isVue
-        ? vm.$options || vm.constructor.options
-        : vm;
-    var name = options.name || options._componentTag;
-    var file = options.__file;
-    if (!name && file) {
-      var match = file.match(/([^/\\]+)\.vue$/);
-      name = match && match[1];
-    }
-
-    return (
-      (name ? ("<" + (classify(name)) + ">") : "<Anonymous>") +
-      (file && includeFile !== false ? (" at " + file) : '')
-    )
-  };
-
-  var repeat = function (str, n) {
-    var res = '';
-    while (n) {
-      if (n % 2 === 1) { res += str; }
-      if (n > 1) { str += str; }
-      n >>= 1;
-    }
-    return res
-  };
-
-  generateComponentTrace = function (vm) {
-    if (vm._isVue && vm.$parent) {
-      var tree = [];
-      var currentRecursiveSequence = 0;
-      while (vm) {
-        if (tree.length > 0) {
-          var last = tree[tree.length - 1];
-          if (last.constructor === vm.constructor) {
-            currentRecursiveSequence++;
-            vm = vm.$parent;
-            continue
-          } else if (currentRecursiveSequence > 0) {
-            tree[tree.length - 1] = [last, currentRecursiveSequence];
-            currentRecursiveSequence = 0;
-          }
-        }
-        tree.push(vm);
-        vm = vm.$parent;
-      }
-      return '\n\nfound in\n\n' + tree
-        .map(function (vm, i) { return ("" + (i === 0 ? '---> ' : repeat(' ', 5 + i * 2)) + (Array.isArray(vm)
-            ? ((formatComponentName(vm[0])) + "... (" + (vm[1]) + " recursive calls)")
-            : formatComponentName(vm))); })
-        .join('\n')
-    } else {
-      return ("\n\n(found in " + (formatComponentName(vm)) + ")")
-    }
-  };
-}
+if (false) { var repeat, classify, classifyRE, hasConsole; }
 
 /*  */
 
@@ -1178,12 +835,7 @@ Dep.prototype.depend = function depend () {
 Dep.prototype.notify = function notify () {
   // stabilize the subscriber list first
   var subs = this.subs.slice();
-  if ( true && !config.async) {
-    // subs aren't sorted in scheduler if not running async
-    // we need to sort them now to make sure they fire in correct
-    // order
-    subs.sort(function (a, b) { return a.id - b.id; });
-  }
+  if (false) {}
   for (var i = 0, l = subs.length; i < l; i++) {
     subs[i].update();
   }
@@ -1499,9 +1151,7 @@ function defineReactive$$1 (
         return
       }
       /* eslint-enable no-self-compare */
-      if ( true && customSetter) {
-        customSetter();
-      }
+      if (false) {}
       // #7981: for accessor properties without setter
       if (getter && !setter) { return }
       if (setter) {
@@ -1521,11 +1171,8 @@ function defineReactive$$1 (
  * already exist.
  */
 function set (target, key, val) {
-  if ( true &&
-    (isUndef(target) || isPrimitive(target))
-  ) {
-    warn(("Cannot set reactive property on undefined, null, or primitive value: " + ((target))));
-  }
+  if (false
+  ) {}
   if (Array.isArray(target) && isValidArrayIndex(key)) {
     target.length = Math.max(target.length, key);
     target.splice(key, 1, val);
@@ -1537,10 +1184,7 @@ function set (target, key, val) {
   }
   var ob = (target).__ob__;
   if (target._isVue || (ob && ob.vmCount)) {
-     true && warn(
-      'Avoid adding reactive properties to a Vue instance or its root $data ' +
-      'at runtime - declare it upfront in the data option.'
-    );
+     false && false;
     return val
   }
   if (!ob) {
@@ -1556,21 +1200,15 @@ function set (target, key, val) {
  * Delete a property and trigger change if necessary.
  */
 function del (target, key) {
-  if ( true &&
-    (isUndef(target) || isPrimitive(target))
-  ) {
-    warn(("Cannot delete reactive property on undefined, null, or primitive value: " + ((target))));
-  }
+  if (false
+  ) {}
   if (Array.isArray(target) && isValidArrayIndex(key)) {
     target.splice(key, 1);
     return
   }
   var ob = (target).__ob__;
   if (target._isVue || (ob && ob.vmCount)) {
-     true && warn(
-      'Avoid deleting properties on a Vue instance or its root $data ' +
-      '- just set it to null.'
-    );
+     false && false;
     return
   }
   if (!hasOwn(target, key)) {
@@ -1609,17 +1247,7 @@ var strats = config.optionMergeStrategies;
 /**
  * Options with restrictions
  */
-if (true) {
-  strats.el = strats.propsData = function (parent, child, vm, key) {
-    if (!vm) {
-      warn(
-        "option \"" + key + "\" can only be used during instance " +
-        'creation with the `new` keyword.'
-      );
-    }
-    return defaultStrat(parent, child)
-  };
-}
+if (false) {}
 
 /**
  * Helper that recursively merges two data objects together.
@@ -1703,12 +1331,7 @@ strats.data = function (
 ) {
   if (!vm) {
     if (childVal && typeof childVal !== 'function') {
-       true && warn(
-        'The "data" option should be a function ' +
-        'that returns a per-instance value in component ' +
-        'definitions.',
-        vm
-      );
+       false && false;
 
       return parentVal
     }
@@ -1766,7 +1389,7 @@ function mergeAssets (
 ) {
   var res = Object.create(parentVal || null);
   if (childVal) {
-     true && assertObjectType(key, childVal, vm);
+     false && false;
     return extend(res, childVal)
   } else {
     return res
@@ -1794,9 +1417,7 @@ strats.watch = function (
   if (childVal === nativeWatch) { childVal = undefined; }
   /* istanbul ignore if */
   if (!childVal) { return Object.create(parentVal || null) }
-  if (true) {
-    assertObjectType(key, childVal, vm);
-  }
+  if (false) {}
   if (!parentVal) { return childVal }
   var ret = {};
   extend(ret, parentVal);
@@ -1825,7 +1446,7 @@ strats.computed = function (
   vm,
   key
 ) {
-  if (childVal && "development" !== 'production') {
+  if (childVal && "production" !== 'production') {
     assertObjectType(key, childVal, vm);
   }
   if (!parentVal) { return childVal }
@@ -1885,9 +1506,7 @@ function normalizeProps (options, vm) {
       if (typeof val === 'string') {
         name = camelize(val);
         res[name] = { type: null };
-      } else if (true) {
-        warn('props must be strings when using array syntax.');
-      }
+      } else if (false) {}
     }
   } else if (isPlainObject(props)) {
     for (var key in props) {
@@ -1897,13 +1516,7 @@ function normalizeProps (options, vm) {
         ? val
         : { type: val };
     }
-  } else if (true) {
-    warn(
-      "Invalid value for option \"props\": expected an Array or an Object, " +
-      "but got " + (toRawType(props)) + ".",
-      vm
-    );
-  }
+  } else if (false) {}
   options.props = res;
 }
 
@@ -1925,13 +1538,7 @@ function normalizeInject (options, vm) {
         ? extend({ from: key }, val)
         : { from: val };
     }
-  } else if (true) {
-    warn(
-      "Invalid value for option \"inject\": expected an Array or an Object, " +
-      "but got " + (toRawType(inject)) + ".",
-      vm
-    );
-  }
+  } else if (false) {}
 }
 
 /**
@@ -1968,9 +1575,7 @@ function mergeOptions (
   child,
   vm
 ) {
-  if (true) {
-    checkComponents(child);
-  }
+  if (false) {}
 
   if (typeof child === 'function') {
     child = child.options;
@@ -2036,12 +1641,7 @@ function resolveAsset (
   if (hasOwn(assets, PascalCaseId)) { return assets[PascalCaseId] }
   // fallback to prototype chain
   var res = assets[id] || assets[camelizedId] || assets[PascalCaseId];
-  if ( true && warnMissing && !res) {
-    warn(
-      'Failed to resolve ' + type.slice(0, -1) + ': ' + id,
-      options
-    );
-  }
+  if (false) {}
   return res
 }
 
@@ -2083,10 +1683,8 @@ function validateProp (
     toggleObserving(prevShouldObserve);
   }
   if (
-    true
-  ) {
-    assertProp(prop, key, value, vm, absent);
-  }
+    false
+  ) {}
   return value
 }
 
@@ -2100,14 +1698,7 @@ function getPropDefaultValue (vm, prop, key) {
   }
   var def = prop.default;
   // warn against non-factory defaults for Object & Array
-  if ( true && isObject(def)) {
-    warn(
-      'Invalid default value for prop "' + key + '": ' +
-      'Props with type Object/Array must use a factory function ' +
-      'to return the default value.',
-      vm
-    );
-  }
+  if (false) {}
   // the raw prop value was also undefined from previous render,
   // return previous default value to avoid unnecessary watcher trigger
   if (vm && vm.$options.propsData &&
@@ -2336,9 +1927,7 @@ function globalHandleError (err, vm, info) {
 }
 
 function logError (err, vm, info) {
-  if (true) {
-    warn(("Error in " + info + ": \"" + (err.toString()) + "\""), vm);
-  }
+  if (false) {}
   /* istanbul ignore else */
   if ((inBrowser || inWeex) && typeof console !== 'undefined') {
     console.error(err);
@@ -2459,89 +2048,7 @@ function nextTick (cb, ctx) {
 
 var initProxy;
 
-if (true) {
-  var allowedGlobals = makeMap(
-    'Infinity,undefined,NaN,isFinite,isNaN,' +
-    'parseFloat,parseInt,decodeURI,decodeURIComponent,encodeURI,encodeURIComponent,' +
-    'Math,Number,Date,Array,Object,Boolean,String,RegExp,Map,Set,JSON,Intl,' +
-    'require' // for Webpack/Browserify
-  );
-
-  var warnNonPresent = function (target, key) {
-    warn(
-      "Property or method \"" + key + "\" is not defined on the instance but " +
-      'referenced during render. Make sure that this property is reactive, ' +
-      'either in the data option, or for class-based components, by ' +
-      'initializing the property. ' +
-      'See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.',
-      target
-    );
-  };
-
-  var warnReservedPrefix = function (target, key) {
-    warn(
-      "Property \"" + key + "\" must be accessed with \"$data." + key + "\" because " +
-      'properties starting with "$" or "_" are not proxied in the Vue instance to ' +
-      'prevent conflicts with Vue internals. ' +
-      'See: https://vuejs.org/v2/api/#data',
-      target
-    );
-  };
-
-  var hasProxy =
-    typeof Proxy !== 'undefined' && isNative(Proxy);
-
-  if (hasProxy) {
-    var isBuiltInModifier = makeMap('stop,prevent,self,ctrl,shift,alt,meta,exact');
-    config.keyCodes = new Proxy(config.keyCodes, {
-      set: function set (target, key, value) {
-        if (isBuiltInModifier(key)) {
-          warn(("Avoid overwriting built-in modifier in config.keyCodes: ." + key));
-          return false
-        } else {
-          target[key] = value;
-          return true
-        }
-      }
-    });
-  }
-
-  var hasHandler = {
-    has: function has (target, key) {
-      var has = key in target;
-      var isAllowed = allowedGlobals(key) ||
-        (typeof key === 'string' && key.charAt(0) === '_' && !(key in target.$data));
-      if (!has && !isAllowed) {
-        if (key in target.$data) { warnReservedPrefix(target, key); }
-        else { warnNonPresent(target, key); }
-      }
-      return has || !isAllowed
-    }
-  };
-
-  var getHandler = {
-    get: function get (target, key) {
-      if (typeof key === 'string' && !(key in target)) {
-        if (key in target.$data) { warnReservedPrefix(target, key); }
-        else { warnNonPresent(target, key); }
-      }
-      return target[key]
-    }
-  };
-
-  initProxy = function initProxy (vm) {
-    if (hasProxy) {
-      // determine which proxy handler to use
-      var options = vm.$options;
-      var handlers = options.render && options.render._withStripped
-        ? getHandler
-        : hasHandler;
-      vm._renderProxy = new Proxy(vm, handlers);
-    } else {
-      vm._renderProxy = vm;
-    }
-  };
-}
+if (false) { var getHandler, hasHandler, isBuiltInModifier, hasProxy, warnReservedPrefix, warnNonPresent, allowedGlobals; }
 
 /*  */
 
@@ -2583,25 +2090,7 @@ function _traverse (val, seen) {
 var mark;
 var measure;
 
-if (true) {
-  var perf = inBrowser && window.performance;
-  /* istanbul ignore if */
-  if (
-    perf &&
-    perf.mark &&
-    perf.measure &&
-    perf.clearMarks &&
-    perf.clearMeasures
-  ) {
-    mark = function (tag) { return perf.mark(tag); };
-    measure = function (name, startTag, endTag) {
-      perf.measure(name, startTag, endTag);
-      perf.clearMarks(startTag);
-      perf.clearMarks(endTag);
-      // perf.clearMeasures(name)
-    };
-  }
-}
+if (false) { var perf; }
 
 /*  */
 
@@ -2653,10 +2142,7 @@ function updateListeners (
     old = oldOn[name];
     event = normalizeEvent(name);
     if (isUndef(cur)) {
-       true && warn(
-        "Invalid handler for event \"" + (event.name) + "\": got " + String(cur),
-        vm
-      );
+       false && false;
     } else if (isUndef(old)) {
       if (isUndef(cur.fns)) {
         cur = on[name] = createFnInvoker(cur, vm);
@@ -2733,22 +2219,7 @@ function extractPropsFromVNodeData (
   if (isDef(attrs) || isDef(props)) {
     for (var key in propOptions) {
       var altKey = hyphenate(key);
-      if (true) {
-        var keyInLowerCase = key.toLowerCase();
-        if (
-          key !== keyInLowerCase &&
-          attrs && hasOwn(attrs, keyInLowerCase)
-        ) {
-          tip(
-            "Prop \"" + keyInLowerCase + "\" is passed to component " +
-            (formatComponentName(tag || Ctor)) + ", but the declared prop name is" +
-            " \"" + key + "\". " +
-            "Note that HTML attributes are case-insensitive and camelCased " +
-            "props need to use their kebab-case equivalents when using in-DOM " +
-            "templates. You should probably use \"" + altKey + "\" instead of \"" + key + "\"."
-          );
-        }
-      }
+      if (false) { var keyInLowerCase; }
       checkProp(res, props, key, altKey, true) ||
       checkProp(res, attrs, key, altKey, false);
     }
@@ -2885,16 +2356,9 @@ function initInjections (vm) {
     toggleObserving(false);
     Object.keys(result).forEach(function (key) {
       /* istanbul ignore else */
-      if (true) {
-        defineReactive$$1(vm, key, result[key], function () {
-          warn(
-            "Avoid mutating an injected value directly since the changes will be " +
-            "overwritten whenever the provided component re-renders. " +
-            "injection being mutated: \"" + key + "\"",
-            vm
-          );
-        });
-      } else {}
+      if (false) {} else {
+        defineReactive$$1(vm, key, result[key]);
+      }
     });
     toggleObserving(true);
   }
@@ -2927,9 +2391,7 @@ function resolveInject (inject, vm) {
           result[key] = typeof provideDefault === 'function'
             ? provideDefault.call(vm)
             : provideDefault;
-        } else if (true) {
-          warn(("Injection \"" + key + "\" not found"), vm);
-        }
+        } else if (false) {}
       }
     }
     return result
@@ -3129,12 +2591,7 @@ function renderSlot (
   if (scopedSlotFn) { // scoped slot
     props = props || {};
     if (bindObject) {
-      if ( true && !isObject(bindObject)) {
-        warn(
-          'slot v-bind without argument expects an Object',
-          this
-        );
-      }
+      if (false) {}
       props = extend(extend({}, bindObject), props);
     }
     nodes = scopedSlotFn(props) || fallback;
@@ -3205,10 +2662,7 @@ function bindObjectProps (
 ) {
   if (value) {
     if (!isObject(value)) {
-       true && warn(
-        'v-bind without argument expects an Object or Array value',
-        this
-      );
+       false && false;
     } else {
       if (Array.isArray(value)) {
         value = toObject(value);
@@ -3313,10 +2767,7 @@ function markStaticNode (node, key, isOnce) {
 function bindObjectListeners (data, value) {
   if (value) {
     if (!isPlainObject(value)) {
-       true && warn(
-        'v-on without argument expects an Object value',
-        this
-      );
+       false && false;
     } else {
       var on = data.on = data.on ? extend({}, data.on) : {};
       for (var key in value) {
@@ -3364,13 +2815,7 @@ function bindDynamicKeys (baseObj, values) {
     var key = values[i];
     if (typeof key === 'string' && key) {
       baseObj[values[i]] = values[i + 1];
-    } else if ( true && key !== '' && key !== null) {
-      // null is a special value for explicitly removing a binding
-      warn(
-        ("Invalid value for dynamic directive argument (expected string or null): " + key),
-        this
-      );
-    }
+    } else if (false) {}
   }
   return baseObj
 }
@@ -3387,7 +2832,7 @@ function prependModifier (value, symbol) {
 function installRenderHelpers (target) {
   target._o = markOnce;
   target._n = toNumber;
-  target._s = toString;
+  target._s = vue_runtime_esm_toString;
   target._l = renderList;
   target._t = renderSlot;
   target._q = looseEqual;
@@ -3530,9 +2975,7 @@ function cloneAndMarkFunctionalResult (vnode, data, contextVm, options, renderCo
   var clone = cloneVNode(vnode);
   clone.fnContext = contextVm;
   clone.fnOptions = options;
-  if (true) {
-    (clone.devtoolsMeta = clone.devtoolsMeta || {}).renderContext = renderContext;
-  }
+  if (false) {}
   if (data.slot) {
     (clone.data || (clone.data = {})).slot = data.slot;
   }
@@ -3641,9 +3084,7 @@ function createComponent (
   // if at this stage it's not a constructor or an async component factory,
   // reject.
   if (typeof Ctor !== 'function') {
-    if (true) {
-      warn(("Invalid Component definition: " + (String(Ctor))), context);
-    }
+    if (false) {}
     return
   }
 
@@ -3815,11 +3256,7 @@ function _createElement (
   normalizationType
 ) {
   if (isDef(data) && isDef((data).__ob__)) {
-     true && warn(
-      "Avoid using observed data object as vnode data: " + (JSON.stringify(data)) + "\n" +
-      'Always create fresh vnode data objects in each render!',
-      context
-    );
+     false && false;
     return createEmptyVNode()
   }
   // object syntax in v-bind
@@ -3831,17 +3268,8 @@ function _createElement (
     return createEmptyVNode()
   }
   // warn against non-primitive key
-  if ( true &&
-    isDef(data) && isDef(data.key) && !isPrimitive(data.key)
-  ) {
-    {
-      warn(
-        'Avoid using non-primitive value as key, ' +
-        'use string/number value instead.',
-        context
-      );
-    }
-  }
+  if (false
+  ) {}
   // support single function children as default scoped slot
   if (Array.isArray(children) &&
     typeof children[0] === 'function'
@@ -3861,12 +3289,7 @@ function _createElement (
     ns = (context.$vnode && context.$vnode.ns) || config.getTagNamespace(tag);
     if (config.isReservedTag(tag)) {
       // platform built-in elements
-      if ( true && isDef(data) && isDef(data.nativeOn)) {
-        warn(
-          ("The .native modifier for v-on is only valid on components but it was used on <" + tag + ">."),
-          context
-        );
-      }
+      if (false) {}
       vnode = new VNode(
         config.parsePlatformTagName(tag), data, children,
         undefined, undefined, context
@@ -3952,14 +3375,10 @@ function initRender (vm) {
   var parentData = parentVnode && parentVnode.data;
 
   /* istanbul ignore else */
-  if (true) {
-    defineReactive$$1(vm, '$attrs', parentData && parentData.attrs || emptyObject, function () {
-      !isUpdatingChildComponent && warn("$attrs is readonly.", vm);
-    }, true);
-    defineReactive$$1(vm, '$listeners', options._parentListeners || emptyObject, function () {
-      !isUpdatingChildComponent && warn("$listeners is readonly.", vm);
-    }, true);
-  } else {}
+  if (false) {} else {
+    defineReactive$$1(vm, '$attrs', parentData && parentData.attrs || emptyObject, null, true);
+    defineReactive$$1(vm, '$listeners', options._parentListeners || emptyObject, null, true);
+  }
 }
 
 var currentRenderingInstance = null;
@@ -4002,14 +3421,7 @@ function renderMixin (Vue) {
       // return error render result,
       // or previous vnode to prevent render error causing blank component
       /* istanbul ignore else */
-      if ( true && vm.$options.renderError) {
-        try {
-          vnode = vm.$options.renderError.call(vm._renderProxy, vm.$createElement, e);
-        } catch (e) {
-          handleError(e, vm, "renderError");
-          vnode = vm._vnode;
-        }
-      } else {
+      if (false) {} else {
         vnode = vm._vnode;
       }
     } finally {
@@ -4021,13 +3433,7 @@ function renderMixin (Vue) {
     }
     // return empty vnode in case the render function errored out
     if (!(vnode instanceof VNode)) {
-      if ( true && Array.isArray(vnode)) {
-        warn(
-          'Multiple root nodes returned from render function. Render function ' +
-          'should return a single root node.',
-          vm
-        );
-      }
+      if (false) {}
       vnode = createEmptyVNode();
     }
     // set parent
@@ -4124,10 +3530,7 @@ function resolveAsyncComponent (
     });
 
     var reject = once(function (reason) {
-       true && warn(
-        "Failed to resolve async component: " + (String(factory)) +
-        (reason ? ("\nReason: " + reason) : '')
-      );
+       false && false;
       if (isDef(factory.errorComp)) {
         factory.error = true;
         forceRender(true);
@@ -4169,9 +3572,9 @@ function resolveAsyncComponent (
             timerTimeout = null;
             if (isUndef(factory.resolved)) {
               reject(
-                 true
-                  ? ("timeout (" + (res.timeout) + "ms)")
-                  : undefined
+                 false
+                  ? (undefined)
+                  : null
               );
             }
           }, res.timeout);
@@ -4318,18 +3721,7 @@ function eventsMixin (Vue) {
 
   Vue.prototype.$emit = function (event) {
     var vm = this;
-    if (true) {
-      var lowerCaseEvent = event.toLowerCase();
-      if (lowerCaseEvent !== event && vm._events[lowerCaseEvent]) {
-        tip(
-          "Event \"" + lowerCaseEvent + "\" is emitted in component " +
-          (formatComponentName(vm)) + " but the handler is registered for \"" + event + "\". " +
-          "Note that HTML attributes are case-insensitive and you cannot use " +
-          "v-on to listen to camelCase events when using in-DOM templates. " +
-          "You should probably use \"" + (hyphenate(event)) + "\" instead of \"" + event + "\"."
-        );
-      }
-    }
+    if (false) { var lowerCaseEvent; }
     var cbs = vm._events[event];
     if (cbs) {
       cbs = cbs.length > 1 ? toArray(cbs) : cbs;
@@ -4473,46 +3865,13 @@ function mountComponent (
   vm.$el = el;
   if (!vm.$options.render) {
     vm.$options.render = createEmptyVNode;
-    if (true) {
-      /* istanbul ignore if */
-      if ((vm.$options.template && vm.$options.template.charAt(0) !== '#') ||
-        vm.$options.el || el) {
-        warn(
-          'You are using the runtime-only build of Vue where the template ' +
-          'compiler is not available. Either pre-compile the templates into ' +
-          'render functions, or use the compiler-included build.',
-          vm
-        );
-      } else {
-        warn(
-          'Failed to mount component: template or render function not defined.',
-          vm
-        );
-      }
-    }
+    if (false) {}
   }
   callHook(vm, 'beforeMount');
 
   var updateComponent;
   /* istanbul ignore if */
-  if ( true && config.performance && mark) {
-    updateComponent = function () {
-      var name = vm._name;
-      var id = vm._uid;
-      var startTag = "vue-perf-start:" + id;
-      var endTag = "vue-perf-end:" + id;
-
-      mark(startTag);
-      var vnode = vm._render();
-      mark(endTag);
-      measure(("vue " + name + " render"), startTag, endTag);
-
-      mark(startTag);
-      vm._update(vnode, hydrating);
-      mark(endTag);
-      measure(("vue " + name + " patch"), startTag, endTag);
-    };
-  } else {
+  if (false) {} else {
     updateComponent = function () {
       vm._update(vm._render(), hydrating);
     };
@@ -4546,9 +3905,7 @@ function updateChildComponent (
   parentVnode,
   renderChildren
 ) {
-  if (true) {
-    isUpdatingChildComponent = true;
-  }
+  if (false) {}
 
   // determine whether component has slot children
   // we need to do this before overwriting $options._renderChildren.
@@ -4614,9 +3971,7 @@ function updateChildComponent (
     vm.$forceUpdate();
   }
 
-  if (true) {
-    isUpdatingChildComponent = false;
-  }
+  if (false) {}
 }
 
 function isInInactiveTree (vm) {
@@ -4694,9 +4049,7 @@ var index = 0;
 function resetSchedulerState () {
   index = queue.length = activatedChildren.length = 0;
   has = {};
-  if (true) {
-    circular = {};
-  }
+  if (false) {}
   waiting = flushing = false;
 }
 
@@ -4760,20 +4113,7 @@ function flushSchedulerQueue () {
     has[id] = null;
     watcher.run();
     // in dev build, check and stop circular updates.
-    if ( true && has[id] != null) {
-      circular[id] = (circular[id] || 0) + 1;
-      if (circular[id] > MAX_UPDATE_COUNT) {
-        warn(
-          'You may have an infinite update loop ' + (
-            watcher.user
-              ? ("in watcher with expression \"" + (watcher.expression) + "\"")
-              : "in a component render function."
-          ),
-          watcher.vm
-        );
-        break
-      }
-    }
+    if (false) {}
   }
 
   // keep copies of post queues before resetting state
@@ -4846,10 +4186,7 @@ function queueWatcher (watcher) {
     if (!waiting) {
       waiting = true;
 
-      if ( true && !config.async) {
-        flushSchedulerQueue();
-        return
-      }
+      if (false) {}
       nextTick(flushSchedulerQueue);
     }
   }
@@ -4896,9 +4233,9 @@ var Watcher = function Watcher (
   this.newDeps = [];
   this.depIds = new _Set();
   this.newDepIds = new _Set();
-  this.expression =  true
-    ? expOrFn.toString()
-    : undefined;
+  this.expression =  false
+    ? undefined
+    : '';
   // parse expression for getter
   if (typeof expOrFn === 'function') {
     this.getter = expOrFn;
@@ -4906,12 +4243,7 @@ var Watcher = function Watcher (
     this.getter = parsePath(expOrFn);
     if (!this.getter) {
       this.getter = noop;
-       true && warn(
-        "Failed watching path: \"" + expOrFn + "\" " +
-        'Watcher only accepts simple dot-delimited paths. ' +
-        'For full control, use a function instead.',
-        vm
-      );
+       false && false;
     }
   }
   this.value = this.lazy
@@ -5115,27 +4447,9 @@ function initProps (vm, propsOptions) {
     keys.push(key);
     var value = validateProp(key, propsOptions, propsData, vm);
     /* istanbul ignore else */
-    if (true) {
-      var hyphenatedKey = hyphenate(key);
-      if (isReservedAttribute(hyphenatedKey) ||
-          config.isReservedAttr(hyphenatedKey)) {
-        warn(
-          ("\"" + hyphenatedKey + "\" is a reserved attribute and cannot be used as component prop."),
-          vm
-        );
-      }
-      defineReactive$$1(props, key, value, function () {
-        if (!isRoot && !isUpdatingChildComponent) {
-          warn(
-            "Avoid mutating a prop directly since the value will be " +
-            "overwritten whenever the parent component re-renders. " +
-            "Instead, use a data or computed property based on the prop's " +
-            "value. Prop being mutated: \"" + key + "\"",
-            vm
-          );
-        }
-      });
-    } else {}
+    if (false) { var hyphenatedKey; } else {
+      defineReactive$$1(props, key, value);
+    }
     // static props are already proxied on the component's prototype
     // during Vue.extend(). We only need to proxy props defined at
     // instantiation here.
@@ -5155,11 +4469,7 @@ function initData (vm) {
     : data || {};
   if (!isPlainObject(data)) {
     data = {};
-     true && warn(
-      'data functions should return an object:\n' +
-      'https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function',
-      vm
-    );
+     false && false;
   }
   // proxy data on instance
   var keys = Object.keys(data);
@@ -5168,20 +4478,9 @@ function initData (vm) {
   var i = keys.length;
   while (i--) {
     var key = keys[i];
-    if (true) {
-      if (methods && hasOwn(methods, key)) {
-        warn(
-          ("Method \"" + key + "\" has already been defined as a data property."),
-          vm
-        );
-      }
-    }
+    if (false) {}
     if (props && hasOwn(props, key)) {
-       true && warn(
-        "The data property \"" + key + "\" is already declared as a prop. " +
-        "Use prop default value instead.",
-        vm
-      );
+       false && false;
     } else if (!isReserved(key)) {
       proxy(vm, "_data", key);
     }
@@ -5214,12 +4513,7 @@ function initComputed (vm, computed) {
   for (var key in computed) {
     var userDef = computed[key];
     var getter = typeof userDef === 'function' ? userDef : userDef.get;
-    if ( true && getter == null) {
-      warn(
-        ("Getter is missing for computed property \"" + key + "\"."),
-        vm
-      );
-    }
+    if (false) {}
 
     if (!isSSR) {
       // create internal watcher for the computed property.
@@ -5236,13 +4530,7 @@ function initComputed (vm, computed) {
     // at instantiation here.
     if (!(key in vm)) {
       defineComputed(vm, key, userDef);
-    } else if (true) {
-      if (key in vm.$data) {
-        warn(("The computed property \"" + key + "\" is already defined in data."), vm);
-      } else if (vm.$options.props && key in vm.$options.props) {
-        warn(("The computed property \"" + key + "\" is already defined as a prop."), vm);
-      }
-    }
+    } else if (false) {}
   }
 }
 
@@ -5265,15 +4553,7 @@ function defineComputed (
       : noop;
     sharedPropertyDefinition.set = userDef.set || noop;
   }
-  if ( true &&
-      sharedPropertyDefinition.set === noop) {
-    sharedPropertyDefinition.set = function () {
-      warn(
-        ("Computed property \"" + key + "\" was assigned to but it has no setter."),
-        this
-      );
-    };
-  }
+  if (false) {}
   Object.defineProperty(target, key, sharedPropertyDefinition);
 }
 
@@ -5301,27 +4581,7 @@ function createGetterInvoker(fn) {
 function initMethods (vm, methods) {
   var props = vm.$options.props;
   for (var key in methods) {
-    if (true) {
-      if (typeof methods[key] !== 'function') {
-        warn(
-          "Method \"" + key + "\" has type \"" + (typeof methods[key]) + "\" in the component definition. " +
-          "Did you reference the function correctly?",
-          vm
-        );
-      }
-      if (props && hasOwn(props, key)) {
-        warn(
-          ("Method \"" + key + "\" has already been defined as a prop."),
-          vm
-        );
-      }
-      if ((key in vm) && isReserved(key)) {
-        warn(
-          "Method \"" + key + "\" conflicts with an existing Vue instance method. " +
-          "Avoid defining component methods that start with _ or $."
-        );
-      }
-    }
+    if (false) {}
     vm[key] = typeof methods[key] !== 'function' ? noop : bind(methods[key], vm);
   }
 }
@@ -5363,18 +4623,7 @@ function stateMixin (Vue) {
   dataDef.get = function () { return this._data };
   var propsDef = {};
   propsDef.get = function () { return this._props };
-  if (true) {
-    dataDef.set = function () {
-      warn(
-        'Avoid replacing instance root $data. ' +
-        'Use nested data properties instead.',
-        this
-      );
-    };
-    propsDef.set = function () {
-      warn("$props is readonly.", this);
-    };
-  }
+  if (false) {}
   Object.defineProperty(Vue.prototype, '$data', dataDef);
   Object.defineProperty(Vue.prototype, '$props', propsDef);
 
@@ -5418,11 +4667,7 @@ function initMixin (Vue) {
 
     var startTag, endTag;
     /* istanbul ignore if */
-    if ( true && config.performance && mark) {
-      startTag = "vue-perf-start:" + (vm._uid);
-      endTag = "vue-perf-end:" + (vm._uid);
-      mark(startTag);
-    }
+    if (false) {}
 
     // a flag to avoid this being observed
     vm._isVue = true;
@@ -5440,9 +4685,9 @@ function initMixin (Vue) {
       );
     }
     /* istanbul ignore else */
-    if (true) {
-      initProxy(vm);
-    } else {}
+    if (false) {} else {
+      vm._renderProxy = vm;
+    }
     // expose real self
     vm._self = vm;
     initLifecycle(vm);
@@ -5455,11 +4700,7 @@ function initMixin (Vue) {
     callHook(vm, 'created');
 
     /* istanbul ignore if */
-    if ( true && config.performance && mark) {
-      vm._name = formatComponentName(vm, false);
-      mark(endTag);
-      measure(("vue " + (vm._name) + " init"), startTag, endTag);
-    }
+    if (false) {}
 
     if (vm.$options.el) {
       vm.$mount(vm.$options.el);
@@ -5524,11 +4765,8 @@ function resolveModifiedOptions (Ctor) {
 }
 
 function Vue (options) {
-  if ( true &&
-    !(this instanceof Vue)
-  ) {
-    warn('Vue is a constructor and should be called with the `new` keyword');
-  }
+  if (false
+  ) {}
   this._init(options);
 }
 
@@ -5593,9 +4831,7 @@ function initExtend (Vue) {
     }
 
     var name = extendOptions.name || Super.options.name;
-    if ( true && name) {
-      validateComponentName(name);
-    }
+    if (false) {}
 
     var Sub = function VueComponent (options) {
       this._init(options);
@@ -5676,9 +4912,7 @@ function initAssetRegisters (Vue) {
         return this.options[type + 's'][id]
       } else {
         /* istanbul ignore if */
-        if ( true && type === 'component') {
-          validateComponentName(id);
-        }
+        if (false) {}
         if (type === 'component' && isPlainObject(definition)) {
           definition.name = definition.name || id;
           definition = this.options._base.extend(definition);
@@ -5833,13 +5067,7 @@ function initGlobalAPI (Vue) {
   // config
   var configDef = {};
   configDef.get = function () { return config; };
-  if (true) {
-    configDef.set = function () {
-      warn(
-        'Do not replace the Vue.config object, set individual fields instead.'
-      );
-    };
-  }
+  if (false) {}
   Object.defineProperty(Vue, 'config', configDef);
 
   // exposed util methods.
@@ -6115,9 +5343,7 @@ function query (el) {
   if (typeof el === 'string') {
     var selected = document.querySelector(el);
     if (!selected) {
-       true && warn(
-        'Cannot find element: ' + el
-      );
+       false && false;
       return document.createElement('div')
     }
     return selected
@@ -6377,19 +5603,7 @@ function createPatchFunction (backend) {
     var children = vnode.children;
     var tag = vnode.tag;
     if (isDef(tag)) {
-      if (true) {
-        if (data && data.pre) {
-          creatingElmInVPre++;
-        }
-        if (isUnknownElement$$1(vnode, creatingElmInVPre)) {
-          warn(
-            'Unknown custom element: <' + tag + '> - did you ' +
-            'register the component correctly? For recursive components, ' +
-            'make sure to provide the "name" option.',
-            vnode.context
-          );
-        }
-      }
+      if (false) {}
 
       vnode.elm = vnode.ns
         ? nodeOps.createElementNS(vnode.ns, tag)
@@ -6405,9 +5619,7 @@ function createPatchFunction (backend) {
         insert(parentElm, vnode.elm, refElm);
       }
 
-      if ( true && data && data.pre) {
-        creatingElmInVPre--;
-      }
+      if (false) {}
     } else if (isTrue(vnode.isComment)) {
       vnode.elm = nodeOps.createComment(vnode.text);
       insert(parentElm, vnode.elm, refElm);
@@ -6493,9 +5705,7 @@ function createPatchFunction (backend) {
 
   function createChildren (vnode, children, insertedVnodeQueue) {
     if (Array.isArray(children)) {
-      if (true) {
-        checkDuplicateKeys(children);
-      }
+      if (false) {}
       for (var i = 0; i < children.length; ++i) {
         createElm(children[i], insertedVnodeQueue, vnode.elm, null, true, children, i);
       }
@@ -6627,9 +5837,7 @@ function createPatchFunction (backend) {
     // during leaving transitions
     var canMove = !removeOnly;
 
-    if (true) {
-      checkDuplicateKeys(newCh);
-    }
+    if (false) {}
 
     while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {
       if (isUndef(oldStartVnode)) {
@@ -6765,9 +5973,7 @@ function createPatchFunction (backend) {
       if (isDef(oldCh) && isDef(ch)) {
         if (oldCh !== ch) { updateChildren(elm, oldCh, ch, insertedVnodeQueue, removeOnly); }
       } else if (isDef(ch)) {
-        if (true) {
-          checkDuplicateKeys(ch);
-        }
+        if (false) {}
         if (isDef(oldVnode.text)) { nodeOps.setTextContent(elm, ''); }
         addVnodes(elm, null, ch, 0, ch.length - 1, insertedVnodeQueue);
       } else if (isDef(oldCh)) {
@@ -6816,11 +6022,7 @@ function createPatchFunction (backend) {
       return true
     }
     // assert node match
-    if (true) {
-      if (!assertNodeMatch(elm, vnode, inVPre)) {
-        return false
-      }
-    }
+    if (false) {}
     if (isDef(data)) {
       if (isDef(i = data.hook) && isDef(i = i.init)) { i(vnode, true /* hydrating */); }
       if (isDef(i = vnode.componentInstance)) {
@@ -6839,15 +6041,8 @@ function createPatchFunction (backend) {
           if (isDef(i = data) && isDef(i = i.domProps) && isDef(i = i.innerHTML)) {
             if (i !== elm.innerHTML) {
               /* istanbul ignore if */
-              if ( true &&
-                typeof console !== 'undefined' &&
-                !hydrationBailed
-              ) {
-                hydrationBailed = true;
-                console.warn('Parent: ', elm);
-                console.warn('server innerHTML: ', i);
-                console.warn('client innerHTML: ', elm.innerHTML);
-              }
+              if (false
+              ) {}
               return false
             }
           } else {
@@ -6865,14 +6060,8 @@ function createPatchFunction (backend) {
             // longer than the virtual children list.
             if (!childrenMatch || childNode) {
               /* istanbul ignore if */
-              if ( true &&
-                typeof console !== 'undefined' &&
-                !hydrationBailed
-              ) {
-                hydrationBailed = true;
-                console.warn('Parent: ', elm);
-                console.warn('Mismatching childNodes vs. VNodes: ', elm.childNodes, children);
-              }
+              if (false
+              ) {}
               return false
             }
           }
@@ -6940,15 +6129,7 @@ function createPatchFunction (backend) {
             if (hydrate(oldVnode, vnode, insertedVnodeQueue)) {
               invokeInsertHook(vnode, insertedVnodeQueue, true);
               return oldVnode
-            } else if (true) {
-              warn(
-                'The client-side rendered virtual DOM tree is not matching ' +
-                'server-rendered content. This is likely caused by incorrect ' +
-                'HTML markup, for example nesting block-level elements inside ' +
-                '<p>, or missing <tbody>. Bailing hydration and performing ' +
-                'full client-side render.'
-              );
-            }
+            } else if (false) {}
           }
           // either not server-rendered, or hydration failed.
           // create an empty node and replace it
@@ -8013,9 +7194,7 @@ function enter (vnode, toggleDisplay) {
       : duration
   );
 
-  if ( true && explicitEnterDuration != null) {
-    checkDuration(explicitEnterDuration, 'enter', vnode);
-  }
+  if (false) {}
 
   var expectsCSS = css !== false && !isIE9;
   var userWantsControl = getHookArgumentsLength(enterHook);
@@ -8121,9 +7300,7 @@ function leave (vnode, rm) {
       : duration
   );
 
-  if ( true && isDef(explicitLeaveDuration)) {
-    checkDuration(explicitLeaveDuration, 'leave', vnode);
-  }
+  if (false) {}
 
   var cb = el._leaveCb = once(function () {
     if (el.parentNode && el.parentNode._pending) {
@@ -8348,11 +7525,7 @@ function actuallySetSelected (el, binding, vm) {
   var value = binding.value;
   var isMultiple = el.multiple;
   if (isMultiple && !Array.isArray(value)) {
-     true && warn(
-      "<select multiple v-model=\"" + (binding.expression) + "\"> " +
-      "expects an Array value for its binding, but got " + (Object.prototype.toString.call(value).slice(8, -1)),
-      vm
-    );
+     false && false;
     return
   }
   var selected, option;
@@ -8565,25 +7738,13 @@ var Transition = {
     }
 
     // warn multiple elements
-    if ( true && children.length > 1) {
-      warn(
-        '<transition> can only be used on a single element. Use ' +
-        '<transition-group> for lists.',
-        this.$parent
-      );
-    }
+    if (false) {}
 
     var mode = this.mode;
 
     // warn invalid mode
-    if ( true &&
-      mode && mode !== 'in-out' && mode !== 'out-in'
-    ) {
-      warn(
-        'invalid <transition> mode: ' + mode,
-        this.$parent
-      );
-    }
+    if (false
+    ) {}
 
     var rawChild = children[0];
 
@@ -8709,11 +7870,7 @@ var TransitionGroup = {
           children.push(c);
           map[c.key] = c
           ;(c.data || (c.data = {})).transition = transitionData;
-        } else if (true) {
-          var opts = c.componentOptions;
-          var name = opts ? (opts.Ctor.options.name || opts.tag || '') : c.tag;
-          warn(("<transition-group> children must be keyed: <" + name + ">"));
-        }
+        } else if (false) { var name, opts; }
       }
     }
 
@@ -8870,119 +8027,244 @@ if (inBrowser) {
       if (devtools) {
         devtools.emit('init', Vue);
       } else if (
-        true
-      ) {
-        console[console.info ? 'info' : 'log'](
-          'Download the Vue Devtools extension for a better development experience:\n' +
-          'https://github.com/vuejs/vue-devtools'
-        );
-      }
+        false
+      ) {}
     }
-    if ( true &&
-      config.productionTip !== false &&
-      typeof console !== 'undefined'
-    ) {
-      console[console.info ? 'info' : 'log'](
-        "You are running Vue in development mode.\n" +
-        "Make sure to turn on production mode when deploying for production.\n" +
-        "See more tips at https://vuejs.org/guide/deployment.html"
-      );
-    }
+    if (false
+    ) {}
   }, 0);
 }
 
 /*  */
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Vue);
+/* harmony default export */ const vue_runtime_esm = (Vue);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90&
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("Icon")
+}
+var staticRenderFns = []
+render._withStripped = true
 
 
-/***/ })
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=7ba5bd90&
 
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => module['default'] :
-/******/ 				() => module;
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-(() => {
-"use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! namespace exports */
-/*! exports [not provided] [unused] */
-/*! runtime requirements: __webpack_require__ */
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ "./src/App.vue");
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=template&id=147fbd72&
+var Iconvue_type_template_id_147fbd72_render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "i",
+    {
+      staticClass: "icon",
+      class: _vm.classNames,
+      on: {
+        click: function($event) {
+          return _vm.$emit("click", $event)
+        }
+      }
+    },
+    [_vm._v("\n\t" + _vm._s(_vm.unicode) + "\n")]
+  )
+}
+var Iconvue_type_template_id_147fbd72_staticRenderFns = []
+Iconvue_type_template_id_147fbd72_render._withStripped = true
 
 
+// CONCATENATED MODULE: ./src/Icon.vue?vue&type=template&id=147fbd72&
 
-new vue__WEBPACK_IMPORTED_MODULE_1__.default({
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/Icon.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const Iconvue_type_script_lang_js_ = ({
+	props: ['name', 'size', 'active', 'clickable'],
+	data() {
+		const unicode = 10;
+		const classNames = ''
+		return {unicode, classNames}
+	}
+});
+
+// CONCATENATED MODULE: ./src/Icon.vue?vue&type=script&lang=js&
+ /* harmony default export */ const src_Iconvue_type_script_lang_js_ = (Iconvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/Icon.vue?vue&type=style&index=0&lang=css&
+var Iconvue_type_style_index_0_lang_css_ = __webpack_require__(86);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functional component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+// CONCATENATED MODULE: ./src/Icon.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = normalizeComponent(
+  src_Iconvue_type_script_lang_js_,
+  Iconvue_type_template_id_147fbd72_render,
+  Iconvue_type_template_id_147fbd72_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/Icon.vue"
+/* harmony default export */ const Icon = (component.exports);
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+
+
+
+/* harmony default export */ const Appvue_type_script_lang_js_ = ({
+	components: {
+		Icon: Icon
+	}
+});
+
+// CONCATENATED MODULE: ./src/App.vue?vue&type=script&lang=js&
+ /* harmony default export */ const src_Appvue_type_script_lang_js_ = (Appvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/App.vue
+
+
+
+
+
+/* normalize component */
+
+var App_component = normalizeComponent(
+  src_Appvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var App_api; }
+App_component.options.__file = "src/App.vue"
+/* harmony default export */ const App = (App_component.exports);
+// CONCATENATED MODULE: ./src/index.js
+
+
+
+new vue_runtime_esm({
 	el: '#root',
 	render(createElement) {
-		return createElement(_App__WEBPACK_IMPORTED_MODULE_0__.default)
+		return createElement(App)
 	},
 })
 
