@@ -3,7 +3,7 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-module.exports = function (environment) {
+module.exports = function (environment = {}) {
 	const isDev = !!environment.development
 
 	return {
